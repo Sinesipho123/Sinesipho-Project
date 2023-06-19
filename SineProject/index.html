@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+   <title>Responsive Regisration Form </title>
+</head>
+<body>
+    <div class="container">
+        <header>Student Registration Form</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" placeholder="Enter mobile number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select required>
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>ID Number</label>
+                            <input type="number" placeholder="ID Number" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Qualification Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Student Number</label>
+                            <input type="number" placeholder="Enter student number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Qualification</label>
+                            <input type="text" placeholder="Enter your qualification" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Subject</label>
+                               <input type="text" placeholder="Enter your subject" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Percentage</label>
+                            <input type="text" placeholder="Enter your percentage" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Starting Year</label>
+                            <input type="date" placeholder="Enter your starting date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Passing Year</label>
+                            <input type="date" placeholder="Enter ending date" required>
+                        </div>
+                    </div>
+
+                    <button class="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+
+            <div class="form second">
+                <div class="details address">
+                    <span class="title">Address Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Address Type</label>
+                            <input type="text" placeholder="Permanent or Temporary" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>City</label>
+                            <input type="text" placeholder="Enter your city" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Province</label>
+                            <input type="text" placeholder="Enter your Province" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Country</label>
+                            <input type="text" placeholder="Enter your country" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Street Name</label>
+                            <input type="text" placeholder="Enter street name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>House Number</label>
+                            <input type="number" placeholder="Enter house number" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details family">
+                    <span class="title">Family Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Father Name</label>
+                            <input type="text" placeholder="Enter father name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Phone Number</label>
+                            <input type="number" placeholder="Enter phone number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mother Name</label>
+                            <input type="text" placeholder="Enter mother name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Phone Number</label>
+                            <input type="number" placeholder="Enter phone number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Sister Name</label>
+                            <input type="text" placeholder="sister name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Phone Number</label>
+                            <input type="number" placeholder="phone number" required>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+                        <button id="popupmsg"class="sumbit">
+                            <span class="btnText">Submit</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+                </div> 
+            </div>
+        </form>
+   
+    </div>
+<script>
+ document.getElementById("popupmsg").onclick = function() {
+    alert("Your Message Successfully Sent!");
+  };
+
+ 
+</script>
+</script>
+    <script src="script.js"></script>
+</body>
+</html>
